@@ -25,8 +25,13 @@ function createCard(date, day, games){
 
 /* Adiciona o conteudo a tag main vua function com um seletor */
 document.querySelector("#cards").innerHTML = 
-    createCard("24/11","Quinta", createGame("brazil", "16:00", "serbia")) +
+    createCard("24/11","Quinta", createGame("brazil", "16:00", "serbia") + 
+    createGame("uruguay","10:00","southkorea") + createGame("switzerland","07:00","cameroon") +
+    createGame("portugal","13:00","ghana")) +
     createCard("28/11","Segunda", createGame("switzerland", "13:00", "brazil") +
-    createGame("portugal","16:00", "uruguay")) +
-    createCard("02/12","Sexta", createGame("brazil", "16:00", "cameroon"))
+    createGame("portugal","16:00", "uruguay") + createGame("ghana","10:00","southkorea") +
+    createGame("cameroon","07:00","serbia")) +
+    createCard("02/12","Sexta", createGame("brazil", "16:00", "cameroon") + 
+    createGame("serbia","16:00","switzerland") + createGame("southkorea","12:00","portugal") + 
+    createGame("ghana","12:00","uruguay"))
  
